@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        .banner{
+            width: 600px;height: 400px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .banner ul li{
+            width: 600px;height: 400px;
+            display:none;
+        }
+       .banner ul li:nth-child(1){
+            display: block;
+        }
+        img{
+            width: 600px;height: 400px;
+        }
+        ol{
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            z-index: 99;
+        }
+        ol>li{
+            width: 15px;
+            height: 15px;
+            background: rgba(255,255,255,.5);
+            border-radius: 50%;
+            float: left;
+            margin: 0 5px;
+        }
+        .active{
+            background: #f60;
+        }
+        p{
+            position: absolute;
+            width: 100%; 
+            top: 50%;
+            margin-top: -25px;
+        }
+        p span{
+            position: absolute;
+            width: 30px;height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+            color: #fff;
+            background: rgba(0,0,0,.5)
+        }
+        p span:nth-child(1){
+            left: 0;
+        }
+        p span:nth-child(2){
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <ul>
+            <li><img src="img/1.jpg" alt=""></li>
+            <li><img src="img/2.jpg" alt=""></li>
+            <li><img src="img/3.jpg" alt=""></li>
+            <li><img src="img/4.jpg" alt=""></li>
+            <li><img src="img/5.jpg" alt=""></li>
+        </ul>
+        <ol>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <p><span class="btnl">&lt;</span><span class="btnr">&gt;</span></p>
+    </div>
+    <script src="script/demo1.js"></script>
+</body>
+</html>
